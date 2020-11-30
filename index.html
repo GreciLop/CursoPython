@@ -7,267 +7,29 @@
     <title>Document</title>
 </head>
 <body>
-    <nav id="navbar">
-        <header>Documentación Python</header>
-        <ul>
-          <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-          <li><a class="nav-link" href="#Python Install">Instalación</a></li>
-          <li>
-            <a class="nav-link" href="#Python Syntax">Sintaxis</a>
-          </li>
-          <li><a class="nav-link" href="#Variables">Variables</a></li>
-          <li>
-            <a class="nav-link" href="#Global_variables">Declaracón de variables</a>
-          </li>
-          <li><a class="nav-link" href="#Constants">Constantes</a></li>
-          <li><a class="nav-link" href="#Data_types">Tipo de Datos</a></li>
-          <li>
-            <a class="nav-link" href="#if...else_statement">if...else</a>
-          </li>
-          <li><a class="nav-link" href="#while_statement">while</a></li>
-          <li>
-            <a class="nav-link" href="#Function_declarations">Declaración de Funciones</a>
-          </li>
-          <li><a class="nav-link" href="#Reference">Reference</a></li>
-        </ul>
-      </nav>
-      <main id="main-doc">
-        <section class="main-section" id="Introduction">
-          <header>Introducción</header>
-          <article>
-            <p>
-                Python es un lenguaje de programación popular. Fue creado por Guido van Rossum y lanzado en 1991.
-
-                Se utiliza para:
-                
-                desarrollo web (lado del servidor),
-                desarrollo de software,
-                matemáticas,
-                secuencias de comandos del sistema.
-            </p>
-            <ul>
-              <li>
-                ¿Qué puede hacer Python?
-                <br>
-                Python se puede utilizar en un servidor para crear aplicaciones web.
-                Python se puede utilizar junto con el software para crear flujos de trabajo.
-                Python puede conectarse a sistemas de bases de datos. También puede leer y modificar archivos.
-                Python se puede utilizar para manejar big data y realizar matemáticas complejas.
-                Python se puede utilizar para la creación rápida de prototipos o para el desarrollo de software listo para producción.
-              </li>
-              <li>
-                ¿Por qué Python?
-                <br>
-                Python funciona en diferentes plataformas (Windows, Mac, Linux, Raspberry Pi, etc.).
-                Python tiene una sintaxis simple similar al idioma inglés.
-                Python tiene una sintaxis que permite a los desarrolladores escribir programas con menos líneas que otros lenguajes de programación.
-                Python se ejecuta en un sistema de interpretación, lo que significa que el código se puede ejecutar tan pronto como se escribe. Esto significa que la creación de prototipos puede ser muy rápida.
-                Python puede tratarse de forma procedimental, orientada a objetos o funcional.
-              </li>
-              <br>
-            </ul>
-          </article>
-        </section>
-        <section class="main-section" id="Python Install">
-          <header>Instalación</header>
-          <article>
-            <p >
-                Muchas PC y Mac ya tendrán Python instalado.
-
-                Para verificar si tiene Python instalado en una PC con Windows, busque Python en la barra de inicio o ejecute lo siguiente en la Línea de comandos (cmd.exe):
-            </p>
-      
-            <p id="console"> 
-                C:\Users\Your Name>python --version
-            </p>
-            <p>Para verificar si tiene Python instalado en Linux o Mac, luego en Linux abra la línea de comando o en Mac abra la Terminal y escriba:</p>
-            <p id="console">
-                python --version
-            </p>
-            <br>
-          </article>
-        </section>
-        <section class="main-section" id="Python Syntax">
-          <header>Sintaxis</header>
-          <article>
-            <p>Ejecutar la sintaxis de Python.</p>
-            <p>Como aprendimos en la página anterior, la sintaxis de Python se puede ejecutar escribiendo directamente en la línea de comandos: 
-            </p>
-            <p id="console">
-            >>> print("Hello, World!")
-            Hello, World!
-           </p>
-           <p>O creando un archivo python en el servidor, usando la extensión de archivo .py y ejecutándolo en la línea de comandos:</p>
-           <p id="console">C:\Users\Your Name>python myfile.py</p>
-           <p>Sangría de Python</p>
-           <p>La sangría se refiere a los espacios al comienzo de una línea de código.
-
-            Mientras que en otros lenguajes de programación la sangría en el código es solo para legibilidad, la sangría en Python es muy importante.
-            
-            Python usa sangría para indicar un bloque de código.</p>
-           <code>if 5 > 2:
-                <dd>print("Five is greater than two!")</dd>   
-           </code>
-           <p>Python le dará un error si omite la sangría:</p>
-           <br>
-          </article>
-        </section>
-        <section class="main-section" id="Variables">
-          <header>Variables</header>
-        <p> Creando Variables
-            Python no tiene ningún comando para declarar una variable.
-            
-            Una variable se crea en el momento en que le asigna un valor por primera vez.
-          </p>
-          <code>x = 5
-            y = "John"
-            print(x)
-            print(y)
-          </code>
-          <p>Si desea especificar el tipo de datos de una variable, puede hacerlo con conversión.</p>
-        <code>x = str(3)    # x will be '3'
-            y = int(3)    # y will be 3
-            z = float(3)  # z will be 3.0</code>
-        </section>
-        <section class="main-section" id="Global_variables">
-          <header>Variables Globales</header>
-          <article>
-
-            <p>
-                Las variables que se crean fuera de una función (como en todos los ejemplos anteriores) se conocen como variables globales.
-
-                Todo el mundo puede utilizar las variables globales, tanto dentro como fuera de las funciones.
-            </p>
-            <code>x = "awesome"
-
-def myfunc():
-  <dd>print("Python is " + x)</dd>
-myfunc()
-            </code>
-
-          </article>
-        </section>
-        <section class="main-section" id="Constants">
-          <header>Constantes</header>
-          <article>
-            <p>
-                Una constante es un tipo de variable la cual no puede ser cambiada. Eso es muy de ayuda pensar las constantes como contenedores que contienen información el cual no puede ser cambiado después.
-
-                En Python, las constantes son usualmente declaradas y asignadas en un módulo. Aquí, el módulo significa un nuevo archivo que contiene variables, funciones, etc; el cual es importada en el archivo principal. Dentro del módulo, las constantes son escritas en letras MAYÚSCULAS y separadas las palabras con el carácter underscore _.
-            </p>
-      
-            <code>x = 1    # int
-                y = 2.8  # float
-                z = 1j   # complex;</code>
-            
-        <section class="main-section" id="Data_types">
-          <header>Tipos de Datos</header>
-          <article>
-            <p>En programación, el tipo de datos es un concepto importante.
-
-                Las variables pueden almacenar datos de diferentes tipos y los diferentes tipos pueden hacer cosas diferentes.
-                
-                Python tiene los siguientes tipos de datos integrados de forma predeterminada, en estas categorías:</p>
-        <ul>
-            <li>Tipo de texto:	str</li>
-            <li>Tipos numéricos:	int, float, complex</li>
-            <li>Tipos de secuencia:	list, tuple, range</li>
-            <li>Tipo de mapeo:	dict</li>
-            <li>Tipos de conjuntos:	set, frozenset</li>
-            <li>Tipo booleano:	bool</li>
-            <li>Tipos binarios:	bytes, bytearray, memoryview</li>
-        </ul>
-    <br>
-    <p>Puede obtener el tipo de datos de cualquier objeto utilizando la type()función:</p>
-    <code>x = 5
-        print(type(x))</code>
-        <br>
-            </article>
-        </section>
-        <section class="main-section" id="if...else_statement">
-          <header>if...else</header>
-          <article>
-            <p>Python admite las condiciones lógicas habituales de las matemáticas:</p>
-            <ul>
-                <li>Es igual a: a == b</li>
-                <li>No es igual a: a! = B</li>
-                <li>Menor que: a < b </li>
-                <li>Menor o igual a: a < = b</li>
-                <li>Mayor que: a> b</li>    
-                <li>Mayor o igual a: a> = b</li>
-            </ul>
-            <code>a = 33
-                b = 200
-                if b > a:<dd>print("b is greater than a")</dd></code>
-          </article>
-        </section>
-        <section class="main-section" id="while_statement">
-          <header>While</header>
-          <article>
-            <p>
-                Con el bucle while podemos ejecutar un conjunto de instrucciones, siempre y cuando se cumpla una condición.</p>
-<code>i = 1
-    while i < 6:
-      print(i)
-      i += 1</code>
-      <p>El bucle while requiere variables relevantes para estar listo, en este ejemplo, tenemos que definir una variable de indexación, i , lo que nos pone a 1.</p>
-      <p>Con la sentencia break podemos detener el ciclo incluso si la condición while es verdadera:</p>  
-      <code>i = 1
-        while i < 6:
-         <dd>print(i)</dd>
-         <dd>if i == 3:</dd>
-        <dd><dd>break</dd></dd>
-          i += 1</code>  
-    <br>
-    </article>
-        </section>
-        <section class="main-section" id="Function_declarations">
-          <header>Declaración de Funciones</header>
-          <article>
-            <p>Una función es un bloque de código que solo se ejecuta cuando se llama.Puede pasar datos, conocidos como parámetros, a una función.Una función puede devolver datos como resultado.</p>
-            <p>En Python, una función se define usando la palabra clave def :
-
-            </p>
-            <code>def my_function():
-               <dd>print("Hello from a function")</dd> </code>
-            <p>Para llamar a una función, use el nombre de la función seguido de paréntesis:</p>
-            <code>def my_function():
-                <dd>print("Hello from a function")</dd>
-              my_function()</code>
-    
-            <p> Argumentos:
-                La información se puede pasar a funciones como argumentos.
-
-                Los argumentos se especifican después del nombre de la función, entre paréntesis. Puede agregar tantos argumentos como desee, solo sepárelos con una coma.
-                
-                El siguiente ejemplo tiene una función con un argumento (fname). Cuando se llama a la función, pasamos un nombre, que se usa dentro de la función para imprimir el nombre completo:
-            </p>
-            <code>
-              def my_function(fname):
-              <dd>print(fname + " Refsnes")</dd>
-              
-              my_function("Emil")
-              my_function("Tobias")
-              my_function("Linus")  
-            </code>
-            <br>
-          </article>
-        </section>
-        <section class="main-section" id="Reference">
-          <header>Reference</header>
-          <article>
-            <ul>
-              <li>
-                Toda la documentación encuéntrala en esta página.
-                <a
-                  href="https://www.w3schools.com/python/default.asp"
-                  target="_blank"
-                  >w3schools</a
-                >
-              </li>
-            </ul>
-          </article>
-        </section>
-      </main>
+  <nav id="navbar">
+    <header>Documentación Python</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#Python Install">Instalación</a></li>
+      <li>
+        <a class="nav-link" href="#Python Syntax">Sintaxis</a>
+      </li>
+      <li><a class="nav-link" href="#Variables">Variables</a></li>
+      <li>
+        <a class="nav-link" href="#Global_variables">Declaracón de variables</a>
+      </li>
+      <li><a class="nav-link" href="#Constants">Constantes</a></li>
+      <li><a class="nav-link" href="#Data_types">Tipo de Datos</a></li>
+      <li>
+        <a class="nav-link" href="#if...else_statement">if...else</a>
+      </li>
+      <li><a class="nav-link" href="#while_statement">while</a></li>
+      <li>
+        <a class="nav-link" href="#Function_declarations">Declaración de Funciones</a>
+      </li>
+      <li><a class="nav-link" href="#Reference">Reference</a></li>
+    </ul>
+  </nav>
 </body>
 </html>
