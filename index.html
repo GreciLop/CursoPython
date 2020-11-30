@@ -162,6 +162,114 @@ myfunc()
             z = 1j   # complex;</code>
 
 <br>
+<section class="main-section" id="Data_types">
+  <header>Tipos de Datos</header>
+  <article>
+    <p>En programación, el tipo de datos es un concepto importante.
+
+        Las variables pueden almacenar datos de diferentes tipos y los diferentes tipos pueden hacer cosas diferentes.
+        
+        Python tiene los siguientes tipos de datos integrados de forma predeterminada, en estas categorías:</p>
+<ul>
+    <li>Tipo de texto:	str</li>
+    <li>Tipos numéricos:	int, float, complex</li>
+    <li>Tipos de secuencia:	list, tuple, range</li>
+    <li>Tipo de mapeo:	dict</li>
+    <li>Tipos de conjuntos:	set, frozenset</li>
+    <li>Tipo booleano:	bool</li>
+    <li>Tipos binarios:	bytes, bytearray, memoryview</li>
+</ul>
+<br>
+<p>Puede obtener el tipo de datos de cualquier objeto utilizando la type()función:</p>
+<code>x = 5
+print(type(x))</code>
+<br>
+    </article>
+</section>
+<section class="main-section" id="if...else_statement">
+  <header>if...else</header>
+  <article>
+    <p>Python admite las condiciones lógicas habituales de las matemáticas:</p>
+    <ul>
+        <li>Es igual a: a == b</li>
+        <li>No es igual a: a! = B</li>
+        <li>Menor que: a < b </li>
+        <li>Menor o igual a: a < = b</li>
+        <li>Mayor que: a> b</li>    
+        <li>Mayor o igual a: a> = b</li>
+    </ul>
+    <code>a = 33
+        b = 200
+        if b > a:<dd>print("b is greater than a")</dd></code>
+  </article>
+</section>
+<section class="main-section" id="while_statement">
+  <header>While</header>
+  <article>
+    <p>
+        Con el bucle while podemos ejecutar un conjunto de instrucciones, siempre y cuando se cumpla una condición.</p>
+<code>i = 1
+while i < 6:
+print(i)
+i += 1</code>
+<p>El bucle while requiere variables relevantes para estar listo, en este ejemplo, tenemos que definir una variable de indexación, i , lo que nos pone a 1.</p>
+<p>Con la sentencia break podemos detener el ciclo incluso si la condición while es verdadera:</p>  
+<code>i = 1
+while i < 6:
+ <dd>print(i)</dd>
+ <dd>if i == 3:</dd>
+<dd><dd>break</dd></dd>
+  i += 1</code>  
+<br>
+</article>
+</section>
+<section class="main-section" id="Function_declarations">
+  <header>Declaración de Funciones</header>
+  <article>
+    <p>Una función es un bloque de código que solo se ejecuta cuando se llama.Puede pasar datos, conocidos como parámetros, a una función.Una función puede devolver datos como resultado.</p>
+    <p>En Python, una función se define usando la palabra clave def :
+
+    </p>
+    <code>def my_function():
+       <dd>print("Hello from a function")</dd> </code>
+    <p>Para llamar a una función, use el nombre de la función seguido de paréntesis:</p>
+    <code>def my_function():
+        <dd>print("Hello from a function")</dd>
+      my_function()</code>
+
+    <p> Argumentos:
+        La información se puede pasar a funciones como argumentos.
+
+        Los argumentos se especifican después del nombre de la función, entre paréntesis. Puede agregar tantos argumentos como desee, solo sepárelos con una coma.
+        
+        El siguiente ejemplo tiene una función con un argumento (fname). Cuando se llama a la función, pasamos un nombre, que se usa dentro de la función para imprimir el nombre completo:
+    </p>
+    <code>
+      def my_function(fname):
+      <dd>print(fname + " Refsnes")</dd>
+      
+      my_function("Emil")
+      my_function("Tobias")
+      my_function("Linus")  
+    </code>
+    <br>
+  </article>
+</section>
+<section class="main-section" id="Reference">
+  <header>Reference</header>
+  <article>
+    <ul>
+      <li>
+        Toda la documentación encuéntrala en esta página.
+        <a
+          href="https://www.w3schools.com/python/default.asp"
+          target="_blank"
+          >w3schools</a
+        >
+      </li>
+    </ul>
+  </article>
+</section>
   </main>
 </body>
 </html>
